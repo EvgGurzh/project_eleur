@@ -10,10 +10,10 @@ from time_check import timer
 
 
 @timer
-def fibonacci_sum():
+def fibonacci_sum(num):
     sum = 0
     a, b = 1, 2
-    while a <= 4000000:
+    while a <= num:
         if a % 2 == 0:
             sum += a
         a, b = b, a + b
@@ -21,4 +21,4 @@ def fibonacci_sum():
 
 
 if __name__ == "__main__":
-    fibonacci_sum()
+    fibonacci_sum(4000000)

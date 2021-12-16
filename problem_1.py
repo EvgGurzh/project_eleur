@@ -7,13 +7,13 @@ from time_check import timer
 
 
 @timer
-def find_multiples_sum():
+def find_multiples_sum(num):
 	sum = 0
-	for i in range(1000):
+	for i in range(num):
 		if i % 3 == 0 or i % 5 == 0:
 			sum += i
 	return sum
 
 
 if __name__ == "__main__":
-	find_multiples_sum()
+	find_multiples_sum(1000)
