@@ -9,7 +9,7 @@ def timer(function):
         start_time = time.time()
         return_value = function(*args, **kwargs)
         finish_time = time.time()
-        print('Elapsed time:', start_time - finish_time)
+        print('Elapsed time:', finish_time - start_time)
         print('Answer:', return_value)
         return return_value
     return func
