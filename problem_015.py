@@ -8,16 +8,16 @@ from time_check import timer
 
 @timer
 def find_routes_amount(greed_size):
-    array_size = greed_size+1
-    array = [[0]*array_size for _ in range(array_size)]
+    array_size = greed_size + 1
+    array = [[0] * array_size for _ in range(array_size)]
     for i in range(array_size):
         for j in range(i, array_size):
             if i == 0 or j == 0:
                 array[i][j] = 1
             elif i == j:
-                array[i][j] = array[i-1][j]*2
+                array[i][j] = array[i - 1][j] * 2
             else:
-                array[i][j] = array[i-1][j] + array[i][j-1]
+                array[i][j] = array[i - 1][j] + array[i][j - 1]
     return array[greed_size][greed_size]
 
 
