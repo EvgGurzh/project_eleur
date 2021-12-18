@@ -11,13 +11,13 @@ from time_check import timer
 
 @timer
 def fibonacci_sum(num):
-    sum = 0
+    result = 0
     a, b = 1, 2
     while a <= num:
         if a % 2 == 0:
-            sum += a
+            result += a
         a, b = b, a + b
-    return sum
+    return result
 
 
 if __name__ == "__main__":

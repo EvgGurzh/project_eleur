@@ -8,7 +8,7 @@ from time_check import timer
 
 
 def if_prime(num):
-    for i in range(2, math.trunc(math.sqrt(num)+1)):
+    for i in range(2, math.trunc(math.sqrt(num) + 1)):
         if num % i == 0:
             return False
     return True
@@ -16,7 +16,7 @@ def if_prime(num):
 
 @timer
 def largest_prime(num):
-    for i in range(2, math.trunc(math.sqrt(num)+1)):
+    for i in range(2, math.trunc(math.sqrt(num) + 1)):
         if num % i == 0 and if_prime(i):
             result = i
     return result

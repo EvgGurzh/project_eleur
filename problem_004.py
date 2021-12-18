@@ -19,8 +19,8 @@ def largest_palindrome():
     answer = 0
     for i in range(100, 999):
         for j in range(100, 999):
-            if palindrome_check(i*j) and i*j > answer:
-                answer = i*j
+            if palindrome_check(i * j) and i * j > answer:
+                answer = i * j
     return answer
 
 
